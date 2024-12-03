@@ -29,7 +29,7 @@ let person = {
 
 let likesChocolate = true;
 
-  if (person.likesChocolate) {
+  if (person.likesChocolate) { //don't need to say person.likesChocolate === true as the value is already boolean
     console.log ("Ben loves chocolate")
   }
   else {
@@ -45,9 +45,9 @@ let bensPhrases = {
   smallTalk: "Warm today, isn't it...",
 };
 
-console.log (bensPhrases["smallTalk"]);
+console.log (bensPhrases["smallTalk"]); //don't forget to use strings when using square brackets
 
-desiredPleasantry = "farewell";
+desiredPleasantry = "farewell"; //when reassigning the value you don't use let
 console.log (bensPhrases[desiredPleasantry]);
 
 let me = {
@@ -58,3 +58,25 @@ let me = {
 
 isBootcamper = true;
 console.log(isBootcamper)
+
+let communication = {
+    success: true,
+    payload: {
+      message: {
+        text: "Please send biscuits!",
+        priority: "URGENT",
+      },
+    },
+  };
+
+ 
+
+ let communication2 = communication.payload.message.text; //communication is the main object, payload is a property of communication, message is a property of payload and text is a property of message
+ console.log (communication2)
+
+ if (communication.payload.message.priority === "URGENT") { // this needs to be a strict equality check, do not use = as this is the assignment operator
+    console.log(communication.payload.message.priority)
+ }
+ else {
+    console.log()
+ }
