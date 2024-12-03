@@ -49,3 +49,12 @@ console.log (bensPhrases["smallTalk"]);
 
 desiredPleasantry = "farewell";
 console.log (bensPhrases[desiredPleasantry]);
+
+let me = {
+    firstName: "Grace",
+    lastName: "O'Reilly",
+    isBootcamper: false,
+  };
+
+isBootcamper = true;
+console.log(isBootcamper)
