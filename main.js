@@ -80,3 +80,16 @@ let communication = {
  else {
     console.log()
  }
+
+ //**multi-layered nexted object**
+ let sea = {
+    crabs: 50,
+    swimmers: {
+        daytime: {
+            number: 4
+        },
+        night: {
+            number: 0
+        },
+    },
+ };
